@@ -1,14 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 
 export default function Nav() {
     return (
-        <nav>
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <nav class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+                <a class="font-bold" href="#">Skills</a>
+                <a class="font-bold"  href="#">Portfolio</a>
+                <a class="font-bold"  href="#">Contact</a>
         </nav>
     );
 }
