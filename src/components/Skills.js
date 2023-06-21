@@ -4,30 +4,14 @@ import SvgWrapper from "./SvgWrapper";
 import { useState } from "react";
 
 export default function Skills() {
-	const [hover, setHover] = useState(0);
-
-	function handleHover() {
-		setHover(1);
-	}
-
-	function handleHoverOff() {
-		setHover(0);
-	}
-
 	return (
 		<>
 			<h1 class="text-2xl subpixel-antialiase font-extrabold">Skills</h1>
 			<SkillsWrapper>
-				<SvgWrapper onHover={handleHover}>
-					{useState.hover ? (
-						<h1 class="text-2xl subpixel-antialiase font-extrabold">
-							HTML
-						</h1>
-					) : (
-						<h1 class="invisible text-2xl subpixel-antialiase font-extrabold">
-							HTML
-						</h1>
-					)}
+				<SvgWrapper>
+					<h1 class="text-2xl subpixel-antialiase font-extrabold">
+						HTML
+					</h1>
 					<svg viewBox="0 0 128 128">
 						<path
 							fill="#E44D26"
