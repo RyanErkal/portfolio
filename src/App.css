@@ -2,7 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	/* Light Mode */
+	--background-color: #faf3ff;
+	--text-color: #5a189a;
+	--accent-color: #7b2cbf;
+	--accent-color-light: #9d4edd;
+	--box-shadow-color: rgba(0, 0, 0, 0.1);
+	--image-scale: 1.2;
+
+	/* Light Mode */
+	/* --dark-background-color: #333333;
+	--dark-text-color: #f5f5f5;
+	--dark-accent-color: #cf9fff; */
+}
+
+/* .light {
+	background-color: #e0aaff;
+	color: #10002b;
+}
+
+.dark {
+	background-color: var(--background-color);
+	color: var(--text-color);
+} */
+
 body {
+	background-color: var(--background-color);
+	color: var(--text-color);
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -18,7 +45,7 @@ header {
 }
 
 nav {
-	background-color: aliceblue;
+	background-color: var(--background-color);
 	padding: 5px;
 	display: flex;
 	flex-direction: row;
@@ -27,20 +54,21 @@ nav {
 }
 
 h1 {
-	color: lightcoral;
+	color: var(--text-color);
+
 	margin: 0px;
 	padding: 10px;
 }
 
 a {
-	color: lightblue;
+	color: var(--text-color);
 	text-decoration: none;
 	padding: 10px;
 	transition: ease-in-out 0.2s;
 }
 
 a:hover {
-	color: lightcoral;
+	color: var(--accent-color);
 	scale: 1.1;
 }
 
@@ -65,21 +93,21 @@ a:hover {
 }
 
 .tech {
-	border: solid 1px lightblue;
+	border: solid 1px var(--accent-color);
 	border-radius: 10px;
 	margin: 10px;
 	padding: 5px;
 }
 
 .tech:hover {
-	background-color: lightblue;
-	color: aliceblue;
+	background-color: var(--background-color);
+	color: var(--accent-color);
 }
 
 .project {
 	padding: 10px;
 	margin: 10px;
-	border: solid 1px lightblue;
+	border: solid 1px var(--accent-color);
 	border-radius: 20px;
 }
 
